@@ -413,7 +413,7 @@ with tab_matrix:
         if val <= 25: return "background-color:#1a2d0a; color:#d4edda;"
         return "background-color:#2a1a0a; color:#f7c948;"
 
-    st.dataframe(df_mat.style.applymap(color_cell), use_container_width=True, height=420)
+    st.dataframe(df_mat, use_container_width=True, height=420)
 
     st.caption("🟢 Rất gần (≤8km)  🟡 Gần (≤15km)  🟠 Trung bình (≤25km)  🟤 Xa (>25km)")
 
